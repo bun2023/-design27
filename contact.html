@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webデザインアレンジ練習 -安井金比羅宮-</title>
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header visual">
+
+    <a href="index.html" class="logo"><img src="img/logo01.png" alt=""></a>
+
+    <a href="index.html" class="sp-title">安井金比羅宮</a>
+
+    <div class="sub-title">
+      <p>参拝・境内案内</p>
+    </div>
+
+    <div class="sp-nav navbar" id="spnav">
+      <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="about.html">安井金比羅宮について</a></li>
+        <li><a href="stone.html">縁切り縁結びについて</a></li>
+        <li><a href="event.html">年中行事</a></li>
+        <li><a href="gokitou.html">ご祈祷について</a></li>
+        <li><a href="keidai.html">参拝・境内案内</a></li>
+        <li><a href="access.html">交通案内</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+      </ul>
+    </div>
+    <div class="fa fa-bars" id="bars"><span>menu</span></div>
+  </header>
+  <div class="side-nav">
+    <ul>
+      <li><a href="about.html">安井金比羅宮について</a></li>
+      <li><a href="stone.html">縁切り縁結びについて</a></li>
+      <li><a href="event.html">年中行事</a></li>
+      <li><a href="gokitou.html">ご祈祷について</a></li>
+      <li><a href="keidai.html">参拝・境内案内</a></li>
+      <li><a href="access.html">交通案内</a></li>
+      <li><a href="contact.html">お問い合わせ</a></li>
+    </ul>
+  </div>
+
+  <section class="contact-area">
+    <h2 class="heading">お問い合わせ</h2>
+    <div class="container">
+      <div>
+        <img src="img/contact.GIF" alt="">
+      </div>
+      <form action="" autocomplete="on">
+        <div class="half">
+          <label for="name">お名前<span>必須</span></label>
+          <input type="text" name="name" id="name" autocomplete="name" placeholder="お名前">
+        </div>
+        <div class="half">
+          <label for="furigana">フリガナ<span>必須</span></label>
+          <input type="text" name="furigana" id="furigana" placeholder="フリガナ">
+        </div>
+        <div>
+          <label for="">性別</label>
+          <p><input type="radio" name="gender" id="" value="男性">男性</p>
+          <p><input type="radio" name="gender" id="" value="女性">女性</p>
+        </div>
+        <div>
+          <label for="">年齢</label>
+          <p><input type="radio" name="sex" id="" value="10歳未満">10歳未満</p>
+          
+          <p><input type="radio" name="sex" id="" value="20歳">20歳代</p>
+          <p><input type="radio" name="sex" id="" value="30歳">30歳代</p>
+          <p><input type="radio" name="sex" id="" value="40歳">40歳代</p>
+          <p><input type="radio" name="sex" id="" value="50歳">50歳代</p>
+          <p><input type="radio" name="sex" id="" value="60歳以上">60歳以上</p>
+        </div>
+
+        <div class="half">
+          <label for="text">郵便番号<span>必須</span></label>
+          <input type="text" autocomplete="postal-code" inputmode="numeric" placeholder="郵便番号" onKeyUp="AjaxZip3.zip2addr(this, '', '都道府県', '住所');">
+        </div>
+        <div class="half">
+          <label for="text">都道府県<span>必須</span></label>
+          <input type="text" name="都道府県" autocomplete="address-level1" placeholder="都道府県">
+        </div>
+        <div>
+          <label for="text">住所<span>必須</span></label>
+          <input type="text" name="住所" autocomplete="street-address" placeholder="住所">
+        </div>
+        <div>
+          <label for="email">メールアドレス<span>必須</span></label>
+          <input type="email" name="email" id="email" autocomplete="email" placeholder="半角英数（例:guji@konpira.or.jp）">
+        </div>
+        <div>
+          <label for="message">お問い合わせ内容<span>必須</span></label>
+          <textarea name="message" id="" cols="30" rows="10" placeholder="ご意見やご質問、ご要望など、なんでもご自由にお書き下さい。"></textarea>
+        </div>
+        <button type="submit">送信する</button>
+      </form>
+    </div> <!-- /container -->
+  </section> <!-- /contact -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-nav">
+        <ul>
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="about.html">安井金比羅宮について</a></li>
+          <li><a href="stone.html">縁切り縁結びについて</a></li>
+          <li><a href="event.html">年中行事</a></li>
+          <li><a href="gokitou.html">ご祈祷について</a></li>
+          <li><a href="keidai.html">参拝・境内案内</a></li>
+          <li><a href="access.html">交通案内</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </div> <!-- /footer-nav -->
+      <div class="copy">
+        <ul>
+          <li>〒605-0823</li>
+          <li>京都市東山区下弁天町70</li>
+          <li>tel. 075-561-5127</li>
+          <li>fax. 075-532-2036</li>
+        </ul>
+      </div>
+      <a href="index.html" class="home"><img src="img/footer.GIF" alt=""></a>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
